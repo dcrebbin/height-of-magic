@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 5978000544593170300}
   m_Layer: 0
   m_Name: spell
-  m_TagString: Untagged
+  m_TagString: PlayerSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,3 +278,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b547bd4f37d0149db870b94d93a92d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerSpell: 1

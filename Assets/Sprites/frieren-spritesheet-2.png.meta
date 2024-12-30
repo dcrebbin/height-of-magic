@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b8386e8b215345b89d3fbe36e5b0705
+guid: 25b18f6233ff54b2ab1aae9c60479883
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_1
+      name: frieren-spritesheet-2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f2f8b75f6f0d4f268180f2153b0ca1d
-      internalID: -879771269
+      spriteID: b6d6e9705ef0846dda8ef8c411875402
+      internalID: 1740961010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: frieren-spritesheet-2_1
       rect:
         serializedVersion: 2
         x: 32
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 030df1682c77a471b8272813530e5977
-      internalID: 208548163
+      spriteID: 32f567dc6d5b04edf86aa29dc5917c8c
+      internalID: 457463926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_1
+      name: frieren-spritesheet-2_2
       rect:
         serializedVersion: 2
         x: 64
@@ -205,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ae87a3013c840debe9d53ac7126128
-      internalID: 1845795236
+      spriteID: 15092bd873596489484e1f9ab3a5b0c5
+      internalID: -287128619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_2
+      name: frieren-spritesheet-2_3
       rect:
         serializedVersion: 2
         x: 96
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b303cff7e2c04b1fa2de3b9481889e7
-      internalID: 1589658498
+      spriteID: 6a05aafe35c8f4be9aeed1001b7b9215
+      internalID: 385292481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_spell
+      name: frieren-spritesheet-2_4
       rect:
         serializedVersion: 2
         x: 128
@@ -247,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4760eeb947fe84ac89b03006747c9805
-      internalID: -176891025
+      spriteID: ceea5429945054a38961f2346cad06cd
+      internalID: 1578038611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_5
+      name: frieren-spritesheet-2_5
       rect:
         serializedVersion: 2
         x: 160
@@ -268,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94faa63c4e62648468ae7fb7936b36be
-      internalID: 623096422
+      spriteID: fbaa36080d32349c689fb661f897e989
+      internalID: -1641947774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_6
+      name: frieren-spritesheet-2_6
       rect:
         serializedVersion: 2
         x: 192
@@ -289,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2fe0282c97e143c3bac2fcda9260fbb
-      internalID: -548034610
+      spriteID: 15be09538b2ea4e09be121e7aad9aa61
+      internalID: -919693742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_7
+      name: frieren-spritesheet-2_7
       rect:
         serializedVersion: 2
         x: 224
@@ -310,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f50965ebdbe34112a578d7b77c0ac53
-      internalID: -177224560
+      spriteID: 7283fb38e7f8945a6b59e4fd77d7b74c
+      internalID: 1514533628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_1
+      name: frieren-spritesheet-2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -331,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a51ba78c3dc05481389b59cb8d03928e
-      internalID: 1469091326
+      spriteID: b90b191629fee4b3fb98a914e00ed561
+      internalID: 353737296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_2
+      name: frieren-spritesheet-2_9
       rect:
         serializedVersion: 2
         x: 32
@@ -352,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84a025c552aaa45e39f39824de57da99
-      internalID: -1475650147
+      spriteID: ef2382ca029e24ae791edd71ae4b3b2e
+      internalID: -1248029265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_3
+      name: frieren-spritesheet-2_10
       rect:
         serializedVersion: 2
         x: 64
@@ -373,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81bbaff22473a487ea9e15f450f63993
-      internalID: 354645788
+      spriteID: c8741b9a3d8f049fb8da27c46545289e
+      internalID: 463263422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: staff_1
+      name: frieren-spritesheet-2_11
       rect:
         serializedVersion: 2
         x: 96
@@ -394,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67a99e05a856e465cb535b5b8430a1af
-      internalID: 1096207732
+      spriteID: 2ff5d8aa813a246c9ae05e426a26966e
+      internalID: -192266367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_1
+      name: frieren-spritesheet-2_12
       rect:
         serializedVersion: 2
         x: 128
@@ -415,14 +415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13d8d479d93e54c9f891fb5b20bd12a5
-      internalID: 1761952033
+      spriteID: 5d5e4d9a985534345968269e3f7e06ab
+      internalID: 878777594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_13
+      name: frieren-spritesheet-2_13
       rect:
         serializedVersion: 2
         x: 160
@@ -436,14 +436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfbf1a95673844c12854d3dddeb9831a
-      internalID: -149664986
+      spriteID: 9b1c40113bd3741b69abfc99b733409a
+      internalID: 1166674003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_14
+      name: frieren-spritesheet-2_14
       rect:
         serializedVersion: 2
         x: 192
@@ -457,40 +457,187 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 045d06f87374c4bf1a300e89e7c1406a
-      internalID: -1645199012
+      spriteID: 34205a24da4ad464d9d8a4ece7ea6f25
+      internalID: 590411565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: qual
+      name: frieren-spritesheet-2_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e1ccead914a47c9b7bdb730a6b4c77
+      internalID: -149993961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef22065dd206440690ba4c8d7e5026c
+      internalID: -393895003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec032e5b2a26140ed8bc11793a51126e
+      internalID: 2095003286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8000357cdb69e4cfea52a3dad33b1ac9
+      internalID: 1553810254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d52e8c9c28d47f0bf305fdd8e37545
+      internalID: 1883259184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457dafe7038d04c60a7ccd5fac64baa8
+      internalID: -1148127554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d4b54238ea2438da48c20c93f431d3
+      internalID: 1717616979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131c3c863f78c4212b800b7e24b4c79f
+      internalID: 1078193526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_23
       rect:
         serializedVersion: 2
         x: 224
         y: 160
         width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83541c6ad5d6d4207bbe302f27c4f18d
-      internalID: -588029940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -499,119 +646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a86a6a599eb8d4d04b1b2143ca994876
-      internalID: -1089417418
+      spriteID: 2f70fe5855e1a466088ae694ee04fb41
+      internalID: -929335527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e86c763c839904d588e3b2f1d5585b17
-      internalID: -1165156863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: staff_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c52cec8fd64144fb8347ceacb6e8b50
-      internalID: -198690189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: staff_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e25c5d5741b94199a6ce17ba5e286a8
-      internalID: -105614978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dash_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13ed1fdae29214a23bf63d9877454187
-      internalID: 2011539651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frieren-spritesheet_21
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 153
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 229ea340d53e14308a42b787c9dd6309
-      internalID: 1992032875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spell_1
+      name: frieren-spritesheet-2_24
       rect:
         serializedVersion: 2
         x: 0
@@ -625,14 +667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ab96466b6f06473f8d94ed4ff22abf4
-      internalID: 977668943
+      spriteID: 760cf1b4057ed4e94a29d2bf6e4550bc
+      internalID: -1467429847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spell_2
+      name: frieren-spritesheet-2_25
       rect:
         serializedVersion: 2
         x: 32
@@ -646,14 +688,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e269993fa014722b46ac14e86a7bf8
-      internalID: 1167367256
+      spriteID: 9e23fa052ed924735865ea8b446d3dda
+      internalID: 124872114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spell_3
+      name: frieren-spritesheet-2_26
       rect:
         serializedVersion: 2
         x: 64
@@ -667,14 +709,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae969c60c8bfa4e70a611bc50d38ab10
-      internalID: 751216525
+      spriteID: 9ca3820ce6d6f4ee78678fd92923ccc4
+      internalID: 1259638954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spell_4
+      name: frieren-spritesheet-2_27
       rect:
         serializedVersion: 2
         x: 96
@@ -688,14 +730,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 489ae362afdc34880ab4da9a63a7850d
-      internalID: 72672945
+      spriteID: 719920818d6a04af6976aa1b4d968ff5
+      internalID: -1916745831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam_1
+      name: frieren-spritesheet-2_28
       rect:
         serializedVersion: 2
         x: 128
@@ -709,14 +751,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ae236da1bd124636aaec8b6a8b3081b
-      internalID: -509229086
+      spriteID: 9b272c7ec30f445e5abf6731b0fab481
+      internalID: -1588713557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam_2
+      name: frieren-spritesheet-2_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffd2ccac25244ab18c9a94fa6b3cd77
+      internalID: 1742587078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c9884a2976d4972a1f1a3a76c8c683
+      internalID: 1282511180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fca9ac1a3ed4a36acd2cfeeb3430e3
+      internalID: 1100816614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_32
       rect:
         serializedVersion: 2
         x: 0
@@ -730,14 +835,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdf8aeec1c6f5436db91a2d7d3ba846f
-      internalID: -1020737575
+      spriteID: 2c727906505c74e62ab2ad3d1c3377cc
+      internalID: 878703868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam_3
+      name: frieren-spritesheet-2_33
       rect:
         serializedVersion: 2
         x: 32
@@ -751,14 +856,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 576188df4752645aaaf323ec5a3f8cb8
-      internalID: 451476642
+      spriteID: eaaf6b418d6eb4b3f9872c9d89b78445
+      internalID: -931577331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam_4
+      name: frieren-spritesheet-2_34
       rect:
         serializedVersion: 2
         x: 64
@@ -772,14 +877,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cddd00a6d74044822a95cc13d804834a
-      internalID: -524676527
+      spriteID: ca521e345d3294402b27ba7df116e513
+      internalID: 704517796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam_5
+      name: frieren-spritesheet-2_35
       rect:
         serializedVersion: 2
         x: 96
@@ -793,14 +898,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ae1da9c68c8446d08a4b756eb81efc7
-      internalID: 1467684846
+      spriteID: b2626e70c4cdd4e909fb80e3eb5c1b5d
+      internalID: 1939747989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_31
+      name: frieren-spritesheet-2_36
       rect:
         serializedVersion: 2
         x: 128
@@ -814,14 +919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2f1e8dc424dd453386ea5c05fa4c3ec
-      internalID: -342587126
+      spriteID: 7ff6d9c2ed3c0467a82234bac811b6f8
+      internalID: -1528990445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_32
+      name: frieren-spritesheet-2_37
       rect:
         serializedVersion: 2
         x: 160
@@ -835,14 +940,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7960f680e2fe04a32a35f4a7e956e908
-      internalID: -664362215
+      spriteID: e4b8b75e16f44406baf6357ce416b2b8
+      internalID: -255426866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_33
+      name: frieren-spritesheet-2_38
       rect:
         serializedVersion: 2
         x: 192
@@ -856,14 +961,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6704cbbfc5cbb43bf870ff3ac5bd034d
-      internalID: 2076791277
+      spriteID: 5244cb94804e34e25bd4aa4ceb6e2804
+      internalID: 1949466718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_34
+      name: frieren-spritesheet-2_39
       rect:
         serializedVersion: 2
         x: 224
@@ -877,20 +982,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60d338e4f89ae4bc58e9c2854b29f88c
-      internalID: 442964124
+      spriteID: 2ef9017627b3f4fb0954c79ebd97dedc
+      internalID: 2141648451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shield_piece
+      name: frieren-spritesheet-2_40
       rect:
         serializedVersion: 2
-        x: 13
-        y: 76
-        width: 7
-        height: 8
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,14 +1003,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b88f62fda7d4996834b1d4713ba671
-      internalID: 1030845822
+      spriteID: 3d3e11abf30174e3c87ec17b48305f90
+      internalID: -738160368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_36
+      name: frieren-spritesheet-2_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba93166e644f4462898072a61795a539
+      internalID: 2009897496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_42
       rect:
         serializedVersion: 2
         x: 64
@@ -919,14 +1045,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfd4076bf033c4587a0e8a0d8f39afce
-      internalID: -75225379
+      spriteID: 6ca1b9fe66af94d85851c401f5751085
+      internalID: -1802625610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_37
+      name: frieren-spritesheet-2_43
       rect:
         serializedVersion: 2
         x: 96
@@ -940,14 +1066,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a94d88f3bec8e4ba78ff0ed06bbe708d
-      internalID: 1785168076
+      spriteID: 1fa8eab676da745d3a5c0f1fcb2f7760
+      internalID: 1963740609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_38
+      name: frieren-spritesheet-2_44
       rect:
         serializedVersion: 2
         x: 128
@@ -961,14 +1087,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95694a8aef76b4a5fbafbd15480f4e85
-      internalID: 1891753988
+      spriteID: 31fbe2d1a1257406090d34ade2e2c63d
+      internalID: 1184975467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_39
+      name: frieren-spritesheet-2_45
       rect:
         serializedVersion: 2
         x: 160
@@ -982,14 +1108,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e68a6e978dee84d6393166b46ce3658c
-      internalID: 842029415
+      spriteID: cff776a4a1a4d4ef5a4c9c67d586d13e
+      internalID: -2135014174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_40
+      name: frieren-spritesheet-2_46
       rect:
         serializedVersion: 2
         x: 192
@@ -1003,14 +1129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20381e1528fef4affb244dc56d76bfdd
-      internalID: 1214711565
+      spriteID: 7b20472e8ada642cabbc024ea0181bf8
+      internalID: -1076317805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_41
+      name: frieren-spritesheet-2_47
       rect:
         serializedVersion: 2
         x: 224
@@ -1024,14 +1150,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 678f472ad0e9d40538720556d15d3b16
-      internalID: -1224298407
+      spriteID: ae3db4fdb58e34c1db39bba86349cdfb
+      internalID: 152034382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_42
+      name: sleep_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23761727a61a247768fe8c61afc6dca1
+      internalID: 1710005076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sleep_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d25813c5a0b747d7ba08d2805c4bb7b
+      internalID: -1259406359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sleep_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3348576d6b8049b5af6647498350535
+      internalID: 1789519777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_51
       rect:
         serializedVersion: 2
         x: 96
@@ -1045,14 +1234,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d7b1f5e855542c98e0cadf3c74d84a
-      internalID: -123031848
+      spriteID: 421024ed4586a40af9be5dd930548f4b
+      internalID: -213630960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_43
+      name: frieren-spritesheet-2_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e5d464ef7f444679424171c1722def
+      internalID: 557912722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b22cbc3daff4ff484a0726fcb2b99c
+      internalID: -2097947580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_54
       rect:
         serializedVersion: 2
         x: 192
@@ -1066,14 +1297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d2279137bb8408e85024bd79177cf8
-      internalID: -1551751083
+      spriteID: f00d10d0f569d4e8d9e65ed8becdc024
+      internalID: -1038491818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_44
+      name: frieren-spritesheet-2_55
       rect:
         serializedVersion: 2
         x: 224
@@ -1087,14 +1318,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2dfcbffce079454880a5f994884d2a1
-      internalID: -1444224345
+      spriteID: 916faf040a72c4399ad47331c7763563
+      internalID: 976102676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_45
+      name: frieren-spritesheet-2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8c9bb2c5ef44bbc82d1c48bbe02674
+      internalID: -168231015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907d29793db9d49d8a50bb31b09e77db
+      internalID: -1341585019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c58731a337bd44c7949ccb44414b92a
+      internalID: 780452157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf13e0441d724ccb83ace6568a16fa5
+      internalID: -712079560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203b6bd7c1bbf48de93b2ae19d031078
+      internalID: -2090224823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6ca715af00046d58995e29b4d4cdda
+      internalID: -54058018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frieren-spritesheet-2_62
       rect:
         serializedVersion: 2
         x: 192
@@ -1108,14 +1465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6227e08250a774f6d9f29e4eaf08307a
-      internalID: -869183312
+      spriteID: 99c68569c229e4eedb513f548d7d223c
+      internalID: -27143536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frieren-spritesheet_46
+      name: frieren-spritesheet-2_63
       rect:
         serializedVersion: 2
         x: 224
@@ -1129,8 +1486,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02ea49bd29ec94059b0df5fb9d78c633
-      internalID: 356613838
+      spriteID: cbe89e91c70e143e1b04dbcb3bb324c8
+      internalID: 1546368702
       vertices: []
       indices: 
       edges: []
@@ -1146,53 +1503,70 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      attack_1: -1089417418
-      attack_2: -1165156863
-      beam_1: -509229086
-      beam_2: -1020737575
-      beam_3: 451476642
-      beam_4: -524676527
-      beam_5: 1467684846
-      dash_1: 1761952033
-      dash_2: 2011539651
-      floor_spell: -176891025
-      frieren-spritesheet_13: -149664986
-      frieren-spritesheet_14: -1645199012
-      frieren-spritesheet_21: 1992032875
-      frieren-spritesheet_31: -342587126
-      frieren-spritesheet_32: -664362215
-      frieren-spritesheet_33: 2076791277
-      frieren-spritesheet_34: 442964124
-      frieren-spritesheet_36: -75225379
-      frieren-spritesheet_37: 1785168076
-      frieren-spritesheet_38: 1891753988
-      frieren-spritesheet_39: 842029415
-      frieren-spritesheet_40: 1214711565
-      frieren-spritesheet_41: -1224298407
-      frieren-spritesheet_42: -123031848
-      frieren-spritesheet_43: -1551751083
-      frieren-spritesheet_44: -1444224345
-      frieren-spritesheet_45: -869183312
-      frieren-spritesheet_46: 356613838
-      frieren-spritesheet_5: 623096422
-      frieren-spritesheet_6: -548034610
-      frieren-spritesheet_7: -177224560
-      idle_1: -879771269
-      idle_2: 208548163
-      jump_1: 1469091326
-      jump_2: -1475650147
-      jump_3: 354645788
-      qual: -588029940
-      run_1: 1845795236
-      run_2: 1589658498
-      shield_piece: 1030845822
-      spell_1: 977668943
-      spell_2: 1167367256
-      spell_3: 751216525
-      spell_4: 72672945
-      staff_1: 1096207732
-      staff_2: -198690189
-      staff_3: -105614978
+      frieren-spritesheet-2_0: 1740961010
+      frieren-spritesheet-2_1: 457463926
+      frieren-spritesheet-2_10: 463263422
+      frieren-spritesheet-2_11: -192266367
+      frieren-spritesheet-2_12: 878777594
+      frieren-spritesheet-2_13: 1166674003
+      frieren-spritesheet-2_14: 590411565
+      frieren-spritesheet-2_15: -149993961
+      frieren-spritesheet-2_16: -393895003
+      frieren-spritesheet-2_17: 2095003286
+      frieren-spritesheet-2_18: 1553810254
+      frieren-spritesheet-2_19: 1883259184
+      frieren-spritesheet-2_2: -287128619
+      frieren-spritesheet-2_20: -1148127554
+      frieren-spritesheet-2_21: 1717616979
+      frieren-spritesheet-2_22: 1078193526
+      frieren-spritesheet-2_23: -929335527
+      frieren-spritesheet-2_24: -1467429847
+      frieren-spritesheet-2_25: 124872114
+      frieren-spritesheet-2_26: 1259638954
+      frieren-spritesheet-2_27: -1916745831
+      frieren-spritesheet-2_28: -1588713557
+      frieren-spritesheet-2_29: 1742587078
+      frieren-spritesheet-2_3: 385292481
+      frieren-spritesheet-2_30: 1282511180
+      frieren-spritesheet-2_31: 1100816614
+      frieren-spritesheet-2_32: 878703868
+      frieren-spritesheet-2_33: -931577331
+      frieren-spritesheet-2_34: 704517796
+      frieren-spritesheet-2_35: 1939747989
+      frieren-spritesheet-2_36: -1528990445
+      frieren-spritesheet-2_37: -255426866
+      frieren-spritesheet-2_38: 1949466718
+      frieren-spritesheet-2_39: 2141648451
+      frieren-spritesheet-2_4: 1578038611
+      frieren-spritesheet-2_40: -738160368
+      frieren-spritesheet-2_41: 2009897496
+      frieren-spritesheet-2_42: -1802625610
+      frieren-spritesheet-2_43: 1963740609
+      frieren-spritesheet-2_44: 1184975467
+      frieren-spritesheet-2_45: -2135014174
+      frieren-spritesheet-2_46: -1076317805
+      frieren-spritesheet-2_47: 152034382
+      frieren-spritesheet-2_5: -1641947774
+      frieren-spritesheet-2_51: -213630960
+      frieren-spritesheet-2_52: 557912722
+      frieren-spritesheet-2_53: -2097947580
+      frieren-spritesheet-2_54: -1038491818
+      frieren-spritesheet-2_55: 976102676
+      frieren-spritesheet-2_56: -168231015
+      frieren-spritesheet-2_57: -1341585019
+      frieren-spritesheet-2_58: 780452157
+      frieren-spritesheet-2_59: -712079560
+      frieren-spritesheet-2_6: -919693742
+      frieren-spritesheet-2_60: -2090224823
+      frieren-spritesheet-2_61: -54058018
+      frieren-spritesheet-2_62: -27143536
+      frieren-spritesheet-2_63: 1546368702
+      frieren-spritesheet-2_7: 1514533628
+      frieren-spritesheet-2_8: 353737296
+      frieren-spritesheet-2_9: -1248029265
+      sleep_1: 1710005076
+      sleep_2: -1259406359
+      sleep_3: 1789519777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
