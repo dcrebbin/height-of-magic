@@ -5,23 +5,36 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     private Animator animator;
-    private bool isCharging = false;
+    public bool isCharging = false;
 
-    [SerializeField] private float spellSpeed = 10f;
+    [SerializeField] private float spellSpeed = 7f;
 
     private movement movement;
 
     [SerializeField] private float chargeTime = 0f;
 
+    [SerializeField] private float omegaSpellChargeTime = 3f;
+
     public GameObject omegaSpell;
 
+    public Vector3 direction = new Vector3(1, 0, 0);
+
+
+    public Transform spellCircle;
+
     public bool isDefending = false;
+
+    public bool isAbovePlayer = false;
+    public bool isBelowPlayer = false;
+
+    public SoundManager soundManager;
 
     [SerializeField] private GameObject spellPrefab;
     void Start()
     {
         animator = GetComponent<Animator>();
         movement = GetComponent<movement>();
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
 
@@ -31,6 +44,11 @@ public class Attack : MonoBehaviour
         while (isCharging)
         {
             chargeTime += Time.deltaTime;
+
+            if (chargeTime > omegaSpellChargeTime)
+            {
+                soundManager.playDashRenewSound();
+            }
             yield return null;
         }
     }
@@ -59,14 +77,38 @@ public class Attack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            //get mouse position
+            spellCircle.rotation = Quaternion.Euler(0, 0, 0);
+            var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             isCharging = true;
+            Debug.Log("Mouse position: " + mousePosition);
+            Debug.Log("Player position: " + transform.position);
+            isAbovePlayer = (mousePosition.y > transform.position.y + 1);
+            isBelowPlayer = (mousePosition.y < transform.position.y - 1);
+
+            if (isAbovePlayer)
+            {
+                spellCircle.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? 90 : -90);
+                Debug.Log("Is above player");
+            }
+            else if (isBelowPlayer)
+            {
+                Debug.Log("Is below player");
+                spellCircle.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? -90 : 90);
+            }
+
+
             animator.SetBool("isCharging", true);
             StartCoroutine(ChargeSpell());
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             float originalSpeed = spellSpeed;
-            if (chargeTime > 1f)
+            var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            isAbovePlayer = (mousePosition.y > transform.position.y + 1);
+            isBelowPlayer = (mousePosition.y < transform.position.y - 1);
+
+            if (chargeTime > omegaSpellChargeTime)
             {
                 StartCoroutine(Lazor());
                 StopCoroutine(ChargeSpell());
@@ -78,7 +120,27 @@ public class Attack : MonoBehaviour
             isCharging = false;
             animator.SetBool("isCharging", false);
             var spell = Instantiate(spellPrefab, transform.position, Quaternion.identity);
-            spell.GetComponent<Rigidbody2D>().velocity = movement.isFacingRight ? transform.right * spellSpeed : -transform.right * spellSpeed;
+            if (isAbovePlayer)
+            {
+
+                spell.transform.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? 90 : 90);
+                spell.GetComponent<Rigidbody2D>().velocity = transform.up * spellSpeed;
+            }
+            else if (isBelowPlayer)
+            {
+                spell.transform.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? -90 : -90);
+                spell.GetComponent<Rigidbody2D>().velocity = -transform.up * spellSpeed;
+            }
+            else
+            {
+                spell.transform.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? 0 : 180);
+                spell.transform.position += movement.isFacingRight ?
+                transform.right + new Vector3(0.5f, 0, 0) :
+                -transform.right + new Vector3(-0.5f, 0, 0);
+                spell.GetComponent<Rigidbody2D>().velocity = movement.isFacingRight ?
+                transform.right * spellSpeed :
+                -transform.right * spellSpeed;
+            }
         }
     }
 
@@ -101,12 +163,28 @@ public class Attack : MonoBehaviour
         {
             shots++;
             var spell = Instantiate(spellPrefab, transform.position, Quaternion.identity);
-            spell.GetComponent<Rigidbody2D>().velocity = movement.isFacingRight ?
+
+            if (isAbovePlayer)
+            {
+                spell.transform.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? 90 : 90);
+                spell.GetComponent<Rigidbody2D>().velocity = transform.up * spellSpeed;
+            }
+            else if (isBelowPlayer)
+            {
+                spell.transform.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? -90 : -90);
+                spell.GetComponent<Rigidbody2D>().velocity = -transform.up * spellSpeed;
+            }
+            else
+            {
+                spell.transform.rotation = Quaternion.Euler(0, 0, movement.isFacingRight ? 0 : 180);
+                spell.GetComponent<Rigidbody2D>().velocity = movement.isFacingRight ?
                 transform.right * spellSpeed :
                 -transform.right * spellSpeed;
-            spell.transform.position += movement.isFacingRight ?
-                    transform.right :
-                    -transform.right;
+                spell.transform.position += movement.isFacingRight ?
+                transform.right + new Vector3(0.5f, 0, 0) :
+                -transform.right + new Vector3(-0.5f, 0, 0);
+            }
+
 
             yield return new WaitForSeconds(0.01f);
         }

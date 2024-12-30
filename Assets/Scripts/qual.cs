@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class qual : MonoBehaviour
 {
 
     private GameObject player;
 
+
+    private UxController uxController;
     public bool isFacingRight = false;
     public float speed = 10f;
     public GameObject spell;
@@ -24,13 +27,21 @@ public class qual : MonoBehaviour
     [SerializeField]
     private float health = 100f;
 
+    public bool canShoot = true;
+
+    private Coroutine shootCoroutine;
+
+    private SoundManager soundManager;
+
     private ScreenShake screenShake;
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        StartCoroutine(ShootCoroutine());
+        uxController = FindObjectOfType<UxController>();
+        shootCoroutine = StartCoroutine(ShootCoroutine());
         originalMaterial = mainBody.material;
         screenShake = FindObjectOfType<ScreenShake>();
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     IEnumerator ShootCoroutine()
@@ -74,6 +85,7 @@ public class qual : MonoBehaviour
             mainBody.material = hitMaterial;
             StartCoroutine(ResetMaterial());
             screenShake.TriggerShake(0.1f, 0.05f);
+            soundManager.playHitSound();
             Destroy(other.gameObject);
             health -= 0.5f;
             healthBar.fillAmount = health / 100f;
@@ -83,9 +95,15 @@ public class qual : MonoBehaviour
                 mainBody.enabled = false;
                 shadow.enabled = false;
                 screenShake.TriggerShake(0.5f, 0.5f);
+                uxController.ShowVictoryScreen();
                 StartCoroutine(Die());
             }
         }
+    }
+
+    public void StopShooting()
+    {
+        StopCoroutine(shootCoroutine);
     }
 
     IEnumerator Die()

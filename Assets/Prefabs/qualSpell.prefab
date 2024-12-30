@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerSpell: 0
+  splashPrefab: {fileID: 6848290580868738333, guid: 46c27abd3095c42f693beb63e0e708c0, type: 3}
 --- !u!50 &-2422242554519293857
 Rigidbody2D:
   serializedVersion: 4

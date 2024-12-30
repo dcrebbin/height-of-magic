@@ -11,8 +11,11 @@ public class movement : MonoBehaviour
 
     [SerializeField] private float dashSpeed = 10f;
     [SerializeField] private float dashDuration = 0.2f;
-    [SerializeField] private float dashCooldown = 1f;
+    [SerializeField] private float dashCooldown = 4f;
     private float lastDashTime = 0f;
+    [SerializeField] private float stepDelay = 0.2f;
+    private Coroutine stepCoroutine;
+    private SoundManager soundManager;
     public bool isFacingRight = true;
 
     public Attack attack;
@@ -27,6 +30,8 @@ public class movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         attack = GetComponent<Attack>();
+        soundManager = FindObjectOfType<SoundManager>();
+        StartCoroutine(nameof(stepping));
     }
 
     void Update()
@@ -78,7 +83,14 @@ public class movement : MonoBehaviour
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");
             Vector2 movement = new Vector2(moveX, moveY).normalized;
-            rb.velocity = movement * speed;
+            if (attack.isCharging)
+            {
+                rb.velocity = movement * speed * 0.3f;
+            }
+            else
+            {
+                rb.velocity = movement * speed;
+            }
 
             // Handle facing direction
             if (moveX < 0)
@@ -93,6 +105,22 @@ public class movement : MonoBehaviour
             }
         }
     }
+
+    IEnumerator stepping()
+    {
+        while (enabled)
+        {
+            if (rb.velocity.magnitude > 0.1f)
+            {
+
+                soundManager.playStepSound();
+                yield return new WaitForSeconds(stepDelay);
+            }
+
+            yield return null;
+        }
+    }
+
 
     private void StartDash(float direction)
     {
