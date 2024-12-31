@@ -27,28 +27,80 @@ public class Attack : MonoBehaviour
     public bool isAbovePlayer = false;
     public bool isBelowPlayer = false;
 
+    public float playerFeetOffset = 10f;
+
     public SoundManager soundManager;
 
     [SerializeField] private GameObject spellPrefab;
+
+    [SerializeField] private GameObject flowerPrefab;
+
+    [SerializeField] private Sprite[] flowerSprites;
+
+    private Coroutine flowerCoroutine;
+
+    public Material flowerSpellMaterial;
+
+    private Material defaultSpellMaterial;
+
+    public float maxTime = 1f;
+
+    public int maxRings = 5;
+
+    private int chargedRings = 0;
+    public int flowersPerRing = 2;
+
+    public float radiusIncrement = 0.3f;
+
+    IEnumerator SpawnFlowers()
+    {
+        float time = 0f;
+        float angle = 0f;
+        float radius = 0.1f;
+
+        int rings = 0;
+
+        int originalFlowersPerRing = flowersPerRing;
+
+        Vector3 belowPlayer = new Vector3(transform.position.x, transform.position.y + playerFeetOffset, 0);
+        while (rings < chargedRings)
+        {
+
+            var flower = Instantiate(flowerPrefab, belowPlayer, Quaternion.identity);
+            flower.GetComponent<SpriteRenderer>().sprite = flowerSprites[Random.Range(0, flowerSprites.Length)];
+            flower.transform.position = new Vector3(belowPlayer.x + Mathf.Cos(angle) * radius, belowPlayer.y + Mathf.Sin(angle) * radius, 0);
+            angle += Mathf.PI / flowersPerRing; // Increase the angle to create the ring effect (30 degrees)
+            if (angle >= 2 * Mathf.PI) // Complete the ring and reset the angle
+            {
+                angle = 0;
+                radius += radiusIncrement;
+                flowersPerRing *= 2;
+                rings++;
+            }
+
+            yield return new WaitForSeconds(0.025f);
+        }
+        flowersPerRing = originalFlowersPerRing;
+    }
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
         movement = GetComponent<movement>();
         soundManager = FindObjectOfType<SoundManager>();
+        defaultSpellMaterial = spellCircle.GetComponent<SpriteRenderer>().material;
     }
 
 
     IEnumerator ChargeSpell()
     {
+        Debug.Log("Charging spell");
         chargeTime = 0f;
         while (isCharging)
         {
             chargeTime += Time.deltaTime;
 
-            if (chargeTime > omegaSpellChargeTime)
-            {
-                soundManager.playDashRenewSound();
-            }
             yield return null;
         }
     }
@@ -75,9 +127,40 @@ public class Attack : MonoBehaviour
             return;
         }
 
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            spellCircle.GetComponent<SpriteRenderer>().material = flowerSpellMaterial;
+            isCharging = true;
+            spellCircle.rotation = Quaternion.Euler(0, 0, -90);
+            animator.SetBool("isCharging", true);
+            StartCoroutine(ChargeSpell());
+        }
+
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            StopCoroutine(ChargeSpell());
+            if (Mathf.FloorToInt(chargeTime) > 0)
+            {
+                chargedRings = Mathf.Min(Mathf.FloorToInt(chargeTime), maxRings);
+                flowerCoroutine = StartCoroutine(SpawnFlowers());
+                isCharging = false;
+                chargeTime = 0f;
+                animator.SetBool("isCharging", false);
+            }
+            else
+            {
+                isCharging = false;
+                chargeTime = 0f;
+                animator.SetBool("isCharging", false);
+            }
+            spellCircle.rotation = Quaternion.Euler(0, 0, 0);
+            spellCircle.GetComponent<SpriteRenderer>().material = defaultSpellMaterial;
+
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            //get mouse position
             spellCircle.rotation = Quaternion.Euler(0, 0, 0);
             var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             isCharging = true;

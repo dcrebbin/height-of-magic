@@ -31,8 +31,11 @@ public class Spell : MonoBehaviour
         {
             Destroy(gameObject);
             var animator = other.gameObject.GetComponent<Animator>();
-            var boxCollider = other.gameObject.GetComponent<BoxCollider2D>();
-            boxCollider.enabled = false;
+            var boxColliders = other.gameObject.GetComponents<BoxCollider2D>();
+            foreach (var boxCollider in boxColliders)
+            {
+                boxCollider.enabled = false;
+            }
             animator.SetTrigger("explode");
             soundManager.playBigHitSound();
             var splash = Instantiate(splashPrefab, other.gameObject.transform.position, Quaternion.identity);
@@ -44,6 +47,8 @@ public class Spell : MonoBehaviour
         if (other.gameObject.CompareTag("Wall"))
         {
             soundManager.playLilHitSound();
+            var splash = Instantiate(splashPrefab, other.gameObject.transform.position, Quaternion.identity);
+            splash.transform.rotation = transform.rotation;
             Destroy(gameObject);
         }
     }
